@@ -7,10 +7,10 @@ declare -a arr=("message1/quote1" "message2/quote2")
 len=${#arr[@]}
 
 # Specify the index of message from where you'd like to start
-index=len-1
+index=$((len-1))
 
 # Specify the time delay between the two consecutive reminders
-sleep_time=10
+sleep_time=3000
 
 while true
 do
